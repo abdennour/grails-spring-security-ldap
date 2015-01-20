@@ -59,9 +59,9 @@ grails.plugin.springsecurity.ldap.authorities.groupSearchFilter = '(member:1.2.8
 
 ## Custom UserDetailsContextMapper
 
-There are three options for mapping LDAP attributes to @UserDetails@ data (as specified by the @grails.plugin.springsecurity.ldap.mapper.userDetailsClass@ config attribute) and hopefully one of those will be sufficient for your needs. If not, it's easy to implement [UserDetailsContextMapper|http://static.springsource.org/spring-security/site/docs/3.0.x/apidocs/org/springframework/security/ldap/userdetails/UserDetailsContextMapper.html] yourself.
+There are three options for mapping LDAP attributes to @UserDetails@ data (as specified by the @grails.plugin.springsecurity.ldap.mapper.userDetailsClass@ config attribute) and hopefully one of those will be sufficient for your needs. If not, it's easy to implement [UserDetailsContextMapper](http://static.springsource.org/spring-security/site/docs/3.0.x/apidocs/org/springframework/security/ldap/userdetails/UserDetailsContextMapper.html) yourself.
 
-Create a class in @src/groovy@ or @src/java@ that implements [UserDetailsContextMapper|http://static.springsource.org/spring-security/site/docs/3.0.x/apidocs/org/springframework/security/ldap/userdetails/UserDetailsContextMapper.html] and register it in @grails-app/conf/spring/resources.groovy@:
+Create a class in @src/groovy@ or @src/java@ that implements [UserDetailsContextMapper](http://static.springsource.org/spring-security/site/docs/3.0.x/apidocs/org/springframework/security/ldap/userdetails/UserDetailsContextMapper.html) and register it in @grails-app/conf/spring/resources.groovy@:
 
 ```
 import com.mycompany.myapp.MyUserDetailsContextMapper
